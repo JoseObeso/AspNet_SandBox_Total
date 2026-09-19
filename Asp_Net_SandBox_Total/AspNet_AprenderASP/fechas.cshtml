@@ -1,0 +1,58 @@
+﻿@{
+    Layout = null;
+    string sTitulo = "Operatividad con Fechas", sMes = "", wFecha = "";
+    int iAnio = DateTime.Now.Year, iMes = DateTime.Now.Month, iDias = DateTime.DaysInMonth(iAnio, iMes),
+         iDiaHoy = DateTime.Now.Day;
+    switch (iMes)
+    {
+        case 1:
+            sMes = "Enero";
+            break;
+        case 2:
+            sMes = "Febrero";
+            break;
+
+        case 3:
+            sMes = "Marzo";
+            break;
+        case 4:
+            sMes = "Abril";
+            break;
+
+
+        case 5:
+            sMes = "Mayo";
+            break;
+        case 11:
+            sMes = "Noviembre";
+            break;
+
+        case 12:
+            sMes = "Diciembre";
+            break;
+
+
+        default:
+            break;
+    }
+    wFecha = "Hoy es " + iDiaHoy + "  de " + sMes + " del " + iAnio;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@sTitulo</title>
+</head>
+<body>
+    <div>
+    Ejemplo de Fechas
+    </div>
+
+    <p>La Fecha es : @wFecha</p>
+
+
+
+</body>
+</html>

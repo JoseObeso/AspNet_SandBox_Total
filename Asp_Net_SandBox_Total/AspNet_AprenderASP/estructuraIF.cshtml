@@ -1,0 +1,61 @@
+﻿@{
+    Layout = null;
+    string sTitulo = "Ejemplo de Estructura IF";
+    int iEdad = 64;
+    int iAnio = DateTime.Now.Year, iMes = DateTime.Now.Month;
+    int iDias = DateTime.DaysInMonth(iAnio, iMes);
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@sTitulo</title>
+    <style>
+        .Cuadro {
+            width: 45px;
+            height: 15px;
+            border: 1px solid red;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div> ejemplo de IF    </div>
+    @if (iEdad > 60)
+    {
+        <p>Usted es Mayor</p>
+    }
+    else
+    {
+        <p>Usted es Menor</p>
+    }
+
+
+    <h2>Calendario : </h2>
+    @for (int i = 1; i < @iDias; i++)
+    {
+        if (i == 7 || i == 14 || i == 21 || i==28)
+        {
+            <div class="Cuadro" style = "background : red">@i</div>
+            <div style="clear:both"></div>
+        }
+        else
+        {
+            <div class="Cuadro">@i</div>
+            <div style="clear:both"></div>
+
+        }
+
+    }
+
+    <p>Bucle Terminado</p>
+
+
+
+
+
+
+</body>
+</html>

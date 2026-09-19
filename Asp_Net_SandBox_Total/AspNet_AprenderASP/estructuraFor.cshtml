@@ -1,0 +1,48 @@
+﻿@{
+    Layout = null;
+    string wTitulo = "Bienvenidos al Sistema";
+
+    // Ver año, mes y dias
+
+    int iAnio = DateTime.Now.Year, iMes = DateTime.Now.Month;
+    int iDias = DateTime.DaysInMonth(iAnio, iMes);
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@wTitulo</title>
+    <style>
+        .Cuadro {
+            width: 45px;
+            height: 15px;
+            border: 1px solid red;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Web Secundario
+    </div>
+
+    <p>Uso de bucle For</p>
+    <p> Año Transcurrio : @iAnio</p>
+    <p> Mes Actual : @iMes</p>
+    <p> Total de dias del Mes @iDias</p>
+
+    <h2>Calendario : </h2>
+    @for (int i = 1; i < @iDias; i++)
+    {
+        <div class="Cuadro">@i</div>
+    }
+    <div style="clear:both"></div>
+    <p>Bucle Terminado</p>
+    
+    <div><a href="~/default.cshtml">Regresar</a></div>
+
+</body>
+</html>

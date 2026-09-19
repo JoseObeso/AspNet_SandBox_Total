@@ -1,0 +1,88 @@
+﻿@{
+    Layout = null;
+
+    string sTitulo = "Analisis con Razor C#";
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@sTitulo</title>
+</head>
+<body>
+    <div>
+        Bienvenidos
+    </div>
+
+
+
+    @{
+        var quote = "The future depends on what you do today. - Mahatma Gandhi";
+    }
+
+    <p>@quote</p>
+
+    @{
+        quote = "Hate cannot drive out hate, only love can do that. - Martin Luther King, Jr.";
+    }
+
+    <p>@quote</p>
+
+    <p>implicitas</p>
+
+    @{
+        var inCSharp = true;
+        <p>Now in HTML, was in C# @inCSharp</p>
+    }
+
+
+    <div class="@false">False</div>
+    <div class="@null">Null</div>
+    <div class="@("")">Empty</div>
+    <div class="@("false")">False String</div>
+    <div class="@("active")">String</div>
+    <input type="checkbox" checked="@true" name="true" />
+    <input type="checkbox" checked="@false" name="false" />
+    <input type="checkbox" checked="@null" name="null" />
+
+    <p>Condiciones</p>
+
+    @{
+        int value = 1;
+    }
+
+    @if (value % 2 == 0)
+    {
+        <p>The value was even.</p>
+    }
+    else if (value >= 1337)
+    {
+        <p>The value is large.</p>
+    }
+    else
+    {
+        <p>The value is odd and small.</p>
+    }
+
+
+    <p>siwth </p>
+
+    @switch (value)
+    {
+        case 1:
+            <p>The value is 1!</p>
+            break;
+        case 1337:
+            <p>Your number is 1337!</p>
+            break;
+        default:
+            <p>Your number wasn't 1 or 1337.</p>
+            break;
+    }
+
+
+</body>
+</html>

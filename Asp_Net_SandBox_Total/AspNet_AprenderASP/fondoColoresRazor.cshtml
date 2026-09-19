@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+
+<html>
+<body>
+    @RenderPage("~/include/cabecera.cshtml")
+
+    <div class="container text-center">
+
+        <span class="badge text-bg-primary">Primary</span><br />
+        <span class="badge text-bg-secondary">Secondary</span><br />
+        <span class="badge text-bg-success">Success</span><br />
+        <span class="badge text-bg-danger">Danger</span><br />
+        <span class="badge text-bg-warning">Warning</span><br />
+        <span class="badge text-bg-info">Info</span><br />
+        <span class="badge text-bg-light">Light</span><br />
+        <span class="badge text-bg-dark">Dark</span>
+
+    </div>
+
+
+
+
+
+    <div class="container text-center">
+        <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+        </nav>
+    </div>
+
+    @for (int i = 0; i < 5; i++)
+    {
+        <br />
+    }
+
+    <div class="container text-center">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+
+        <button type="button" class="btn btn-link">Link</button>
+    </div>
+
+
+    @for (int i = 0; i < 5; i++)
+    {
+        <br />
+    }
+
+    <div class="container text-center">
+        <a class="btn btn-primary" href="#" role="button">Link</a>
+        <button class="btn btn-primary" type="submit">Button</button>
+        <input class="btn btn-primary" type="button" value="Input">
+        <input class="btn btn-primary" type="submit" value="Submit">
+        <input class="btn btn-primary" type="reset" value="Reset">
+    </div>
+
+    @for (int i = 0; i < 5; i++)
+    {
+        <br />
+    }
+
+
+    <div class="container text-center">
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+    </div>
+
+    <div class="container text-center">
+        <h2>Botones Grandes</h2>
+
+        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+
+    </div>
+
+
+
+
+        @RenderPage("~/include/piepagina.cshtml")
+
+</body>
+</html>
+

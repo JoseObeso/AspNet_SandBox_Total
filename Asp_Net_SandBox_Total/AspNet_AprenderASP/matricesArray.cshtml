@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+    string sTitulo = "Bienvenidos a la Web";
+    string[] Ciudades = new string[] { "Chimbote", "Trujillo", "Lima", "Chiclayo", "Tarapoto", "Chosica", "Paita" };
+    
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@sTitulo</title>
+</head>
+<body>
+    <div>
+        Ejemplo de Matrices
+    </div>
+    <p>Soy de la ciudad de :  @Ciudades[0]</p>
+    <p>Estudie de la ciudad de : @Ciudades[1]</p>
+    <p>Vivo en la ciudad de : @Ciudades[2]</p>
+    <hr />
+    <p>Uso de for Each, especial para matrices</p>
+    <hr />
+
+    @foreach (var item in Ciudades)
+    {
+
+        <p> la Ciudad es :  @item</p>
+
+    }
+</body>
+</html>

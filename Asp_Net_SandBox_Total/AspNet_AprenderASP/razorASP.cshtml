@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        @if (IsPost)
+        {
+            // Repeat the previous example, but use <text> tags.
+            <text>
+                tiempo es: <br /> @DateTime.Now
+                <br />
+                @DateTime.Now es el <em>actual</em> momento.
+            </text>
+        }
+
+        @{
+            var minTemp = 75;
+            <text>El mes de hoy es : @DateTime.Now.ToString("MMMM"), y  <em>Gran</em> Dia <br /><p>
+                vamor a 
+                ultimo @minTemp grados.
+            </p></text>
+        }
+    </div>
+</body>
+</html>

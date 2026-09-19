@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html>
+<body>
+    @RenderPage("~/include/cabecera.cshtml")
+
+    <div class="container text-center">
+        <div class="card" style="width: 18rem;">
+            <img src="~/images/wfondo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Chimbote</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Vamos por ahi...</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container text-center">
+        <h1>Lista Grupos</h1>
+
+        <div class="card bg-dark" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="container">
+        <h1>Otro Tipo de Tarjeta</h1>
+        <div class="card" style="width: 18rem;">
+            <img src="~/images/wfondo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+            </div>
+        </div>
+    </div>
+
+    @for (int i = 0; i < 5; i++)
+    {
+        <br />
+    }
+    <div class="container text-center">
+        <h1>Tarjeta Tipo Presentacion</h1>
+        <div class="card text-center">
+            <div class="card-header bg-info">
+                Presentacion
+            </div>
+            <div class="card-body bg-danger">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-body-secondary bg-info">
+                2 days ago
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container text-center">
+
+    </div>
+
+
+    @RenderPage("~/include/piepagina.cshtml")
+
+</body>
+</html>
+

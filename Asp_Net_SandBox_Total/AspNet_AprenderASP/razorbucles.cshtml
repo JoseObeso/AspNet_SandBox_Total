@@ -1,0 +1,87 @@
+﻿@{
+    Layout = null;
+    string sTitulo = " Caso de bucles";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@sTitulo</title>
+</head>
+<body>
+    <div>
+        bucles
+
+    </div>
+
+    @{
+        /* C# comment */
+        // Another C# comment
+    }
+    <!-- HTML comment -->
+    comentarios
+
+
+    <!-- Single statement blocks  -->
+    @{ var total = 7; }
+    @{ var myMessage = "Hola Mundo"; }
+
+    <!-- Inline expressions -->
+    <p>La Cuenta es : @total </p>
+    <p>Mensaje es: @myMessage</p>
+
+    <!-- Multi-statement block -->
+    @{
+        var greeting = "Bienvenidos al elpiquero.com!";
+        var weekDay = DateTime.Now.DayOfWeek;
+        var greetingMessage = greeting + " Hoy es: " + weekDay;
+    }
+    <p>Los saludos es : @greetingMessage</p>
+
+
+    <!-- Single statement block.  -->
+    @{ var theMonth = DateTime.Now.Month; }
+    <p>Valor Numerico del MES: @theMonth</p>
+
+    <!-- Multi-statement block. -->
+    @{
+        var outsideTemp = 79;
+        var weatherMessage = "Hola, esto es " + outsideTemp + " Grados.";
+    }
+    <p>Temperatura de hoy es : @weatherMessage</p>
+
+
+
+    <p><u>Valores para variables</u></p>
+
+    <!-- Storing a string -->
+    @{ var welcomeMessage = "Welcome, new members!"; }
+    <p>@welcomeMessage</p>
+
+    <!-- Storing a date -->
+    @{ var year = DateTime.Now.Year; }
+
+    <!-- Displaying a variable -->
+    <p>Bienvenidos a este año :  @year!</p>
+
+    <table border="3">
+        <tr>
+            <td>Respuesta URL</td>
+            <td>Archivo</td>
+            <td>Directorio</td>
+            <td>HTTP Request Type</td>
+        </tr>
+        <tr>
+            <td>@Request.Url</td>
+            <td>@Request.FilePath</td>
+            <td>@Request.MapPath(Request.FilePath)</td>
+            <td>@Request.RequestType</td>
+        </tr>
+    </table>
+
+
+
+</body>
+</html>
