@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet_AprenderASP", "AspNe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet_ExtNet_Laboratorio", "AspNet_ExtNet_Laboratorio\AspNet_ExtNet_Laboratorio.csproj", "{4EC7AAFA-5532-4696-A4C1-4485CBE2AF70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet_ExtNet_MVC", "AspNet_ExtNet_MVC\AspNet_ExtNet_MVC.csproj", "{C5E81A78-1A99-4DE8-BAA7-DA1E27581771}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4EC7AAFA-5532-4696-A4C1-4485CBE2AF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EC7AAFA-5532-4696-A4C1-4485CBE2AF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EC7AAFA-5532-4696-A4C1-4485CBE2AF70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5E81A78-1A99-4DE8-BAA7-DA1E27581771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5E81A78-1A99-4DE8-BAA7-DA1E27581771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5E81A78-1A99-4DE8-BAA7-DA1E27581771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5E81A78-1A99-4DE8-BAA7-DA1E27581771}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
