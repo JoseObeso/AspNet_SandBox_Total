@@ -140,6 +140,8 @@
     <Content Include="plantilla.cshtml" />
     <Content Include="rangoRazor.cshtml" />
     <Content Include="razorCheck.cshtml" />
+    <None Include="packages.config" />
+    <Content Include="RazorCsharp_01.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
